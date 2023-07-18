@@ -38,7 +38,7 @@ brew install --cask --appdir=/Applications docker
 # 拉取qinglong镜像
 docker pull whyour/qinglong:latest
 
-# 启动青龙，默认端口5600（本地端口为占用该端口）启动后访问青龙管理后台返回code401，后修改成5700就可以正常访问后台了，具体原因未知
+# 启动青龙，默认端口5700
 docker run -dit \
 -v $PWD/ql/config:/ql/config \
 -v $PWD/ql/log:/ql/log \
@@ -219,7 +219,7 @@ agentid：应用的agentid
 
 
 
-同事在企业微信中的应用可以查收到上面的推送信息，至此消息推送配置结束
+同时在企业微信中的应用可以查收到上面的推送信息，至此消息推送配置结束
 
 ![image-20230718193658311](https://cdn.jsdelivr.net/gh/opsbear2/ImagesForBlog@master/default/2023-07-18/20230718-193658.png)
 
